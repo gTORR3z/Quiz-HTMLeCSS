@@ -25,7 +25,7 @@
         </section>
         <!--Pergunta 1: multipla escolha-->
         <section class="pergunta  pergunta1">
-            <h2>Pergunta 1: Qual das opções abaixo é uma tag sem fechamento em <abbr title="HyperText Markup Language">HTML</abbr>?</h2>
+            <h2>Qual das opções abaixo é uma tag sem fechamento em <abbr title="HyperText Markup Language">HTML</abbr>?</h2>
             <form class="opcaop1-container">
                 <div class="opcaop1">
                     <input type="radio" value="div" id="p1a" name="pergunta1" class="selecao-resposta-p1">
@@ -50,14 +50,14 @@
         </section>
         <!--Pergunta 2: texto-->
         <section class="pergunta pergunta2">
-            <h2>Pergunta 2: Qual a propriedade CSS usada para alterar a cor do texto?</h2>
+            <h2>Qual a propriedade CSS usada para alterar a cor do texto?</h2>
             <form>
                 <input type="text" id="p2" name="pergunta2" placeholder="Digite aqui sua resposta..." class="resposta-inserida-p2">
             </form>
         </section>
         <!--Pergunta 3: senha-->
         <section class="pergunta pergunta3">
-            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <h2>Escreva um exemplo de senha forte</h2>
             <form>
                 <div class="password-container">
                     <input type="password" name="pergunta3" id="p3" placeholder="Digite uma senha..." class="resposta-inserida-p3">
@@ -66,16 +66,16 @@
             </form>
         </section>
         <!--Pergunta 4: data-->
-        <section class="pergunta">
-            <h2>Pergunta 4: Em que ano o HTML lançou sua primeira versão?</h2>
+        <section class="pergunta pergunta4" >
+            <h2>Em que ano o HTML lançou sua primeira versão?</h2>
             <form>
-                <input type="date" name="pergunta4" id="p4" class="resposta-inserida-p4">
+                <input type="date" name="pergunta4" id="p4 data-html" class="resposta-inserida-p4">
             </form>
         </section>
         <!--Pergunta 5: Seleção multipla-->
-        <section class="pergunta">
-            <h2>Pergunta 5: Quais dessa propriedades CSS podem ser usadas para centralizar um elemento? </h2>
-            <form>
+        <section class="pergunta pergunta5">
+            <h2>Quais dessa propriedades CSS podem ser usadas para centralizar um elemento? </h2>
+            <form class="opcoes">
                 <input type="checkbox" name="pergunta5" id="p5a" value="align">
                 <label for="p5a">text-align</label><br>
 
@@ -90,15 +90,17 @@
             </form>
         </section>
         <!--Pergunta 6: upload de arquivo-->
-        <section class="pergunta">
-            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML e ESTILIZAÇÃO CSS</h2>
+        <section class="pergunta pergunta6">
+            <h2>Faça o upload de um arquivo contendo código HTML e ESTILIZAÇÃO CSS</h2>
             <form>
                 <input type="file" name="pergunta6" id="p6">
+                <label for="p6">Escolher arquivo</label>
+                <span class="file-name">Nenhum arquivo selecionado  </span>
             </form>
         </section>
         <!--Pergunta 7: menu suspenso-->
-        <section class="pergunta">
-            <h2>Pergunta 7: Selecione a unidade de medida que é relativa ao tamanho da fonte do elemento pai: </h2>
+        <section class="pergunta pergunta7">
+            <h2>Selecione a unidade de medida que é relativa ao tamanho da fonte do elemento pai: </h2>
             <form>
                 <select name="pergunta7" id="p7">
                     <option value="a">A: Unidade relativa "em" baseada no tamanho da fonte do elemento pai</option>
@@ -109,16 +111,15 @@
             </form>
         </section>
         <!--Pergunta 8: Imagem-->
-        <section class="pergunta">
-            <h2>Qual Além do HTML, essa tecnologia faz parte de um conjunto de especificações que definem a estrutura e o comportamento de páginas web modernas. Qual o nome desse conjunto dde tecnologias?</h2>
+        <section class="pergunta pergunta8">
+            <h2>Análise a imagem abaixo: essa tecnologia faz parte de um conjunto de especificações que definem a estrutura e o comportamento de páginas web modernas. Qual o nome desse conjunto de tecnologias?</h2>
             <figure>
                 <img src="logo-html.png" alt="logotipo do HTML" title="Logotipo HTML"><br>
-                <figcaption>Figura 1: Logotipo da linguagem HTML5</figcaption>
             </figure>
             <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
         </section> 
         <!--Tabela de Pontuação-->
-        <section>
+        <section class="tabela-pontos">
             <h2>Tabela de Pontuação</h2>
             <table border="1">
                 <thead>
@@ -162,7 +163,7 @@
             </table>
         </section>
         <!--Tabela de Respostas-->
-        <section>
+        <section class="tabela-respostas">
             <h2>Verifique suas respostas</h2>
             <details>
                 <Summary>Clique aqui para ver as respostas do quiz</Summary>
@@ -211,7 +212,7 @@
 
                         <tr>
                             <td>8</td>
-                            <td>HTML, CSS e JavaScript ou também conhecidos por Tríade do front-End</td>
+                            <td>HTML, CSS e JavaScript ou também conhecidos por Tríade do Front-End</td>
                         </tr>
                     </tbody>
                 </table>
@@ -219,7 +220,7 @@
             </details>
         </section>
         <!--Formulário de FeedBack-->
-        <section>
+        <section class="feedback">
             <h2>Nos dê o seu feedback</h2>
             <form>
                 <fieldset>
@@ -232,21 +233,22 @@
                     <br>
 
                     <h4>Qual sua avaliação final sobre o quiz?</h4>
-                    <input type="radio" name="avalicao" id="1">
-                    <label for="1">1</label>
-                    <input type="radio" name="avalicao" id="2">
-                    <label for=2">2</label>
-                    <input type="radio" name="avalicao" id="3">
-                    <label for="3">3</label>
-                    <input type="radio" name="avalicao" id="4">
-                    <label for="4">4</label>
-                    <input type="radio" name="avalicao" id="5">
-                    <label for="5">5</label>
+                    <input type="radio" name="avaliacao" id="1">
+                    <label for="1" class="label-avaliacao">1</label>
+                    <input type="radio" name="avaliacao" id="2">
+                    <label for=2" class="label-avaliacao">2</label>
+                    <input type="radio" name="avaliacao" id="3">
+                    <label for="3" class="label-avaliacao">3</label>
+                    <input type="radio" name="avaliacao" id="4">
+                    <label for="4" class="label-avaliacao">4</label>
+                    <input type="radio" name="avaliacao" id="5">
+                    <label for="5" class="label-avaliacao">5</label>
 
                     <br>
                     <br>
                     <label for="comentarios"><b>Comentários</b></label><br>
                     <textarea name="comentarios" id="comentarios" cols="45" rows="4" placeholder="Digite seu comentário aqui.."></textarea>
+                    <button>Enviar Feedback</button>
                 </fieldset>
             </form>
         </section>
