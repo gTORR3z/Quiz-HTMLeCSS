@@ -641,6 +641,45 @@ main {
     box-shadow: 0 0 10px #00E676;
 }
 
+footer {
+    background: #121212;
+    color: #00E676;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #00B0FF;
+}
+
+footer h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #00B0FF;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer ul li {
+    font-size: 1.2rem;
+    display: inline;
+}
+
+footer ul li a {
+    color: #00E676;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer ul li a:hover {
+    color: #00B0FF;
+    transform: scale(1.1);
+}
+
 @keyframes scanLight {
     0% { background-position: 0 -100%; }
     100% { background-position: 0 100%; }
